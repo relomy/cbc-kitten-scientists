@@ -22,7 +22,7 @@ var run = function() {
 
     var options = {
         // When debug is enabled, messages that go to the game log are also logged using window.console.
-        debug: false,
+        debug: true,
 
         // The interval at which the internal processing loop is run, in milliseconds.
         interval: 2000,
