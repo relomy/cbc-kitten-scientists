@@ -273,7 +273,7 @@ var run = function() {
         var msg = game.msg.apply(game, args);
         $(msg.span).css('color', color);
 
-        if (options.debug && console) console.log(args);
+        // if (options.debug && console) console.log(args);
     };
 
     // Used for option change messages and other special notifications
