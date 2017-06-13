@@ -346,8 +346,8 @@ var run = function() {
             if (options.auto.build.enabled) this.build();
             if (options.auto.space.enabled) this.space();
             if (options.auto.craft.enabled) this.craft();
-            if (options.auto.trade.enabled) this.trade();
             if (options.auto.hunt.enabled) this.hunt();
+            if (options.auto.trade.enabled) this.trade();
         },
         build: function () {
             var builds = options.auto.build.items;
