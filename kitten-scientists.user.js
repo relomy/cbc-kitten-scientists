@@ -317,7 +317,7 @@ var run = function() {
         this.spaceManager = new SpaceManager();
         this.craftManager = new CraftManager();
         this.tradeManager = new TradeManager();
-        this.villageManager = new TabManager('Small Village');
+        this.villageManager = new TabManager('Village');
     };
 
     Engine.prototype = {
@@ -422,8 +422,9 @@ var run = function() {
             }
         },
         holdFestival: function () {
-            if (game.science.get('drama').researched && game.calendar.festivalDays === 0 && game.villageTab.festivalBtn.model.enabled) {
-                game.villageTab.festivalBtn.onClick();
+            // if (game.science.get('drama').researched && game.calendar.festivalDays === 0 && game.villageTab.festivalBtn.model.enabled) {
+            if (game.science.get('drama').researched && game.calendar.festivalDays === 0 && this.villageTab.tab.festivalBtn.model.enabled) {
+                this.villageTab.tab.festivalBtn.onClick();
 
                 if (game.calendar.festivalDays !== 0) {
                     storeForSummary('festival');
