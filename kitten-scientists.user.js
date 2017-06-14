@@ -423,8 +423,8 @@ var run = function() {
         },
         holdFestival: function () {
             // if (game.science.get('drama').researched && game.calendar.festivalDays === 0 && game.villageTab.festivalBtn.model.enabled) {
-            if (game.science.get('drama').researched && game.calendar.festivalDays === 0 && this.villageTab.tab.festivalBtn.model.enabled) {
-                this.villageTab.tab.festivalBtn.onClick();
+            if (game.science.get('drama').researched && game.calendar.festivalDays === 0 && this.villageManager.tab.festivalBtn.model.enabled) {
+                this.villageManager.tab.festivalBtn.onClick();
 
                 if (game.calendar.festivalDays !== 0) {
                     storeForSummary('festival');
