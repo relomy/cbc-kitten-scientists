@@ -317,7 +317,7 @@ var run = function() {
         this.spaceManager = new SpaceManager();
         this.craftManager = new CraftManager();
         this.tradeManager = new TradeManager();
-        this.villageManager = new TabManager('Federation');
+        this.villageManager = new TabManager('Small Village');
     };
 
     Engine.prototype = {
